@@ -1,9 +1,31 @@
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url(../assets/fonts/Pretendard-Medium.subset.woff2);
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url(../assets/fonts/Pretendard-Regular.subset.woff2);
+}
+
+@font-face {
+    font-family: 'Pretendard-SemiBold';
+    src: url(../assets/fonts/Pretendard-SemiBold.subset.woff2);
+}
+
+
 html, body {
     margin: 0px;
     padding: 0px;
     background-color: #F5F6F8;
     width: 100vw;
     height: 100vh;
+}
+
+a, a:hover, a:focus {
+    color: #000;
+    text-decoration: none;
+    outline: none;
 }
 
 body {
@@ -60,4 +82,51 @@ header .header-item:hover {
     align-items: center;
     width: 44px;
     height: 44px;
+}
+
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 600px;
+    height: 60px;
+    border-radius: 20px 20px 0px 0px;
+    border: 1px solid #DCDEE0;
+    border-bottom: none;
+    overflow: hidden;
+}
+
+.footer-items {
+    display: flex;
+    height: 100%;
+}
+
+
+.footer-item {
+    flex: 1 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-item:hover {
+    background-color: #F5F6F8;
+}
+
+
+.footer-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-text {
+    font-family: 'Pretendard-Regular', sans-serif;
+    font-size: 8pt;
+    margin: 0;
+    line-height: 1;
 }
