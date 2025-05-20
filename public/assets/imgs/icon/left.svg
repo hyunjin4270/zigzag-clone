@@ -1,1 +1,14 @@
-<svg class="zds4_dgssjf1" width="20" height="20" fill="none" viewBox="0 0 32 32" data-zds-icon="IconArrowLeftRegular" style="--zds4_dgssjf0: var(--zds-colors-global-gray-600);"><path fill="currentColor" fill-rule="evenodd" d="m19.47 6.47 1.06 1.06L12.06 16l8.47 8.47-1.06 1.06L9.94 16z" clip-rule="evenodd"></path></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="20"
+  height="20"
+  viewBox="0 0 32 32"
+  fill="currentColor"
+>
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="m19.47 6.47 1.06 1.06L12.06 16l8.47 8.47-1.06 1.06L9.94 16z"
+  />
+</svg>
