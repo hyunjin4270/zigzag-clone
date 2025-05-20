@@ -49,6 +49,11 @@ header .header-items {
     height: 100%;
 }
 
+header .header-item:hover {
+    background-color: #F5F6F8;
+    border-radius: 5px;
+}
+
 .header-item {
     display: flex;
     justify-content: center;
@@ -56,5 +61,3 @@ header .header-items {
     width: 44px;
     height: 44px;
 }
-
-.
