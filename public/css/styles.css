@@ -77,6 +77,7 @@ button {
     background-color: white;
     width: 198px;
     height: 368px;
+    cursor: pointer;
 }
 
 .media-container {
@@ -86,6 +87,7 @@ button {
     height: 238px;
     justify-content: space-between;
     align-items: end;
+    overflow: hidden;
 }
 
 .img-item {
@@ -93,11 +95,18 @@ button {
     height: 238px;
     position: absolute;
     z-index: 0;
+    transition: transform 0.1s ease-in-out;
+    transform-origin: center center;
+}
+
+.card:hover .img-item {
+  transform: scale(1.1);
 }
 
 .state-item {
     width: 49px;
     height: 25px;
+    opacity: 0.9;
     z-index: 1;
 }
 
@@ -117,15 +126,24 @@ button {
     height: 110px;
     padding-left: 16px;
     padding-right: 16px;
-    padding-top: 4px;
+}
+
+.company {
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
     padding-bottom: 4px;
 }
 
 .item-company {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 13px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-right: 2px;
+}
+
+.img-company {
+    width: 12px;
+    height: 12px;
 }
 
 .product-name {
@@ -140,6 +158,7 @@ button {
 .product-price {
     display: flex;
     flex-direction: row;
+    padding-top: 4px;
 }
 
 .discount-rate {
@@ -171,6 +190,7 @@ button {
 .item-rate {
     display: flex;
     align-items: end;
+    padding-top: 8px;
 }
 
 .img-rate {
