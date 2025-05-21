@@ -6,22 +6,57 @@ html, body {
 }
 
 @font-face {
-    font-family: 'Pretendard JP';
-    src: url('../assets/fonts/PretendardJP-Regular.otf') format('opentype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Pretendard JP';
-    src: url('../assets/fonts/PretendardJP-Bold.otf') format('opentype');
-    font-weight: 700;
-}
-
-@font-face {
   font-family: 'Pretendard JP';
   src: url('../assets/fonts/PretendardJP-Thin.otf') format('opentype');
   font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-ExtraLight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Black.otf') format('opentype');
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -82,10 +117,12 @@ button {
     height: 110px;
     padding-left: 16px;
     padding-right: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 .item-company {
-    font-weight:bold;
+    font-weight: 600;
     font-size: 13px;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -107,12 +144,12 @@ button {
 
 .discount-rate {
     color: #F55DD7;
-    font-weight: bold;
+    font-weight: 700;
     margin-right: 2px;
 }
 
 .discount-price {
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .product-tags {
