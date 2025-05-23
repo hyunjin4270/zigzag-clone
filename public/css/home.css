@@ -75,19 +75,27 @@ body {
 }
 
 .layout {
-    background-color: white;
+    background-color: black;
     width: 600px;
     height: 100%;
+    position: relative;
+    overflow-y: auto;
+    transform: translateZ(0);
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 0 16px;
+    background-color: #fff;
     flex: 1;
     height: 52px;
     display: flex;
     justify-content: space-between;
     justify-items: center;
-    margin-left: 16px;
-    margin-right: 16px;
 }
 
 header .img-textLogo {
@@ -136,6 +144,7 @@ footer {
     border: 1px solid #DCDEE0;
     border-bottom: none;
     overflow: hidden;
+    background-color: white;
 }
 
 .footer-items {
