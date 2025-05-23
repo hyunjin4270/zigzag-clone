@@ -19,6 +19,7 @@
   "homepage": "https://github.com/hyunjin4270/zigzag-clone#readme",
   "devDependencies": {
     "@types/node": "^22.14.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "undici-types": "^7.10.0"
   }
 }

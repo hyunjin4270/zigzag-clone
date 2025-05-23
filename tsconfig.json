@@ -1,9 +1,11 @@
 {
   "compilerOptions": {
     "target": "ESNext",
-    "module": "ESNext",
+    "module": "NodeNext",
     "rootDir": "public/ts",
     "outDir": "public/js",
-    "strict": true
+    "strict": true,
+    "moduleResolution": "NodeNext",
+    "skipLibCheck": true
   }
 }
