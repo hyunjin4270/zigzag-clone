@@ -1,5 +1,5 @@
-import { HomeBannerData } from '../types/HomeBannersData'
-import { getTemplate } from '../utils/dom'
+import { HomeBannerData } from '../types/HomeBannersData.js'
+import { getTemplate } from '../utils/dom.js'
 
 /**
  * 홈 배너 템플릿에 원하는 내용을 주입하는 메서드입니다.

@@ -1,5 +1,5 @@
-import { HomeBannerData } from '../types/HomeBannersData'
-import { getJsonUrl } from '../utils/url'
+import { HomeBannerData } from '../types/HomeBannersData.js'
+import { getJsonUrl } from '../utils/url.js'
 
 /**
  * 배너의 JSON 데이터를 꺼내는 메서드입니다.
