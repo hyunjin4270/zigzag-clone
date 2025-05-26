@@ -1,9 +1,18 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
+    "target": "ES2022",
     "module": "ESNext",
+    "moduleResolution": "node",
+    "lib": ["ES2022", "DOM"],
     "rootDir": "public/ts",
     "outDir": "public/js",
-    "strict": true
-  }
+    "strict": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["public/ts/**/*"],
+  "exclude": ["node_modules", "public/js"]
 }

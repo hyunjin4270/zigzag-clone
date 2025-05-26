@@ -5,7 +5,7 @@
  */
 interface HomeBannerData {
   imgSrc: string
-  imgAlt?: string
+  imgAlt: string
   titlePrimary?: string
   titleSecondary?: string
   text?: string
@@ -48,8 +48,8 @@ function renderHomeBanner(data: HomeBannerData): HTMLElement {
   titleElements[0].textContent = data.titlePrimary ?? ''
   titleElements[1].textContent = data.titleSecondary ?? ''
 
-  const subElement = element.querySelector<HTMLElement>('.slide-text')
-  if (subElement) subElement.textContent = data.text ?? ''
+  const subTitleElement = element.querySelector<HTMLElement>('.slide-text')!
+  subTitleElement.textContent = data.text ?? ''
 
   return element
 }
@@ -61,14 +61,21 @@ async function init(): Promise<void> {
   const container = document.getElementById('home-banner-container')
   if (!container) throw new Error('#home-banner-container 가 없습니다.')
 
-  const jsonUrl = new URL('./data/homeBanners.json', import.meta.url).href
-  const res = await fetch(jsonUrl)
-  if (!res.ok) throw new Error('homeBanners.json 로드 실패')
-  const bannersData: { banners: HomeBannerData[] } = await res.json()
+  const jsonUrl = new URL('./data/homeBanners.json', import.meta.url);
+  const data = await fetch(jsonUrl.href);``
+  if (!data.ok) throw new Error('homeBanners.json 로드 실패')
 
-  bannersData.banners.forEach(banner => {
-    container.appendChild(renderHomeBanner(banner))
-  })
+  const bannersData: { banners: HomeBannerData[] } = await data.json();
+  const totalPages: number = bannersData.banners.length;
+
+  bannersData.banners.forEach((banner, index) => {
+    const currentPageInfo = {
+      ...banner,
+      currentPage: index + 1,
+      totalPages: totalPages
+    }
+    container.appendChild(renderHomeBanner(currentPageInfo));
+  });
 }
 
 document.addEventListener('DOMContentLoaded', () => init().catch(console.error))
