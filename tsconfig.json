@@ -1,14 +1,18 @@
 {
   "compilerOptions": {
-    "target": "ESNext",              // 최신 JS 기능을 그대로 사용
-    "module": "ESNext",              // ESM 모듈 형식으로 출력
-    "moduleResolution": "node",      // Node 스타일 경로 해석 (browser-compatible)
-    "rootDir": "public/ts",          
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "lib": ["ES2022", "DOM"],
+    "rootDir": "public/ts",
     "outDir": "public/js",
     "strict": true,
-    "esModuleInterop": true,         // import/require 호환
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
-    "lib": ["DOM", "ESNext"],        // DOM API 타입 포함
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["public/ts/**/*"]      // 컴파일할 TS 파일 위치
+  "include": ["public/ts/**/*"],
+  "exclude": ["node_modules", "public/js"]
 }

@@ -1,0 +1,204 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    font-family: 'Pretendard JP', sans-serif;
+}
+
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-ExtraLight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+p, ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+button {
+    all: unset;
+}
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 198px;
+    height: 368px;
+    cursor: pointer;
+}
+
+.media-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 238px;
+    justify-content: space-between;
+    align-items: end;
+    overflow: hidden;
+}
+
+.img-item {
+    width: 198px;
+    height: 238px;
+    position: absolute;
+    z-index: 0;
+    transition: transform 0.1s ease-in-out;
+    transform-origin: center center;
+}
+
+.card:hover .img-item {
+  transform: scale(1.1);
+}
+
+.state-item {
+    width: 49px;
+    height: 25px;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.btn-heart {
+    z-index: 1;
+    width: 32px;
+    height: 32px;
+    padding: 6px;
+}
+
+.heart-item {
+    width: 32px;
+    height: 32px;
+}
+
+.item-info {
+    height: 110px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.company {
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 4px;
+}
+
+.item-company {
+    font-weight: 500;
+    font-size: 13px;
+    padding-right: 2px;
+}
+
+.img-company {
+    width: 12px;
+    height: 12px;
+}
+
+.product-name {
+    font-size: 13px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+.product-price {
+    display: flex;
+    flex-direction: row;
+    padding-top: 4px;
+}
+
+.discount-rate {
+    color: #F55DD7;
+    font-weight: 700;
+    margin-right: 2px;
+}
+
+.discount-price {
+    font-weight: 700;
+}
+
+.product-tags {
+    display: flex;
+    margin-top: 8px;
+    height: 22px;
+}
+
+.product-tag {
+    margin-top: -2px;
+    margin-left: -2px;
+}
+
+.img-tag {
+    width: 45px;
+    height: 20px;
+}
+
+.item-rate {
+    display: flex;
+    align-items: end;
+    padding-top: 8px;
+}
+
+.img-rate {
+    width: 12px;
+    height: 12px;
+}
+
+.rate-msg {
+    font-size: 10px;
+    color: #889CBB;
+}
