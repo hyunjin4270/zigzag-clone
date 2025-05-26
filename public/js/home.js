@@ -1,47 +1,54 @@
-"use strict";
-// src/app.ts
+// src/home.ts
+/**
+ * id를 이용해 HTML 요소(템플릿)을 얻습니다.
+ * 만약 없으면 예외를 발생시킵니다.
+ * @param id 얻고자 하는 템플릿의 아이디
+ * @returns 템플릿
+ */
 function getTemplate(id) {
-    const tpl = document.getElementById(id);
-    if (!tpl || tpl.tagName !== 'TEMPLATE') {
+    const template = document.getElementById(id);
+    if (!template || template.tagName !== 'TEMPLATE') {
         throw new Error(`템플릿 #${id}을 찾을 수 없습니다.`);
     }
-    return tpl;
+    return template;
 }
+/**
+ * 홈 배너 템플릿에 원하는 내용을 주입하는 메서드입니다.
+ * @param data 주입하고자 하는 내용
+ */
 function renderHomeBanner(data) {
-    const tpl = getTemplate('home-banner-template');
-    const fragment = document.importNode(tpl.content, true);
-    const el = fragment.firstElementChild;
-    const imgEl = el.querySelector('.slide-img');
-    imgEl.src = data.imgSrc;
-    imgEl.alt = data.imgAlt ?? '';
-    const pageEls = Array.from(el.querySelectorAll('.page-text'));
-    if (pageEls.length >= 2) {
-        pageEls[0].textContent = String(data.currentPage);
-        pageEls[1].textContent = String(data.totalPages);
-    }
-    const titleEls = Array.from(el.querySelectorAll('.slide-title'));
-    if (titleEls.length >= 2) {
-        titleEls[0].textContent = data.titlePrimary;
-        titleEls[1].textContent = data.titleSecondary;
-    }
-    el.querySelector('.slide-text').textContent = data.text;
-    return el;
+    const template = getTemplate('home-banner-template');
+    const fragment = document.importNode(template.content, true);
+    const element = fragment.firstElementChild;
+    const imageElement = element.querySelector('.slide-img');
+    imageElement.src = data.imgSrc;
+    imageElement.alt = data.imgAlt ?? '';
+    const pageElements = Array.from(element.querySelectorAll('.page-text'));
+    pageElements[0].textContent = String(data.currentPage);
+    pageElements[1].textContent = String(data.totalPages);
+    const titleElements = Array.from(element.querySelectorAll('.slide-title'));
+    titleElements[0].textContent = data.titlePrimary ?? '';
+    titleElements[1].textContent = data.titleSecondary ?? '';
+    const subElement = element.querySelector('.slide-text');
+    if (subElement)
+        subElement.textContent = data.text ?? '';
+    return element;
 }
+/**
+ * 정보기입(변경 예정)
+ */
 async function init() {
-    const sampleData = {
-        imgSrc: './assets/imgs/farm/202504050530590972_086517.jpg',
-        imgAlt: '배너 이미지',
-        titlePrimary: '꾸밈레벨별 코디 추천',
-        titleSecondary: '10% 쿠폰 발급 중',
-        text: '편한 원마일웨어부터 하객룩까지',
-        currentPage: 30,
-        totalPages: 42,
-    };
     const container = document.getElementById('home-banner-container');
     if (!container)
         throw new Error('#home-banner-container 가 없습니다.');
-    container.appendChild(renderHomeBanner(sampleData));
+    const jsonUrl = new URL('./data/homeBanners.json', import.meta.url).href;
+    const res = await fetch(jsonUrl);
+    if (!res.ok)
+        throw new Error('homeBanners.json 로드 실패');
+    const bannersData = await res.json();
+    bannersData.banners.forEach(banner => {
+        container.appendChild(renderHomeBanner(banner));
+    });
 }
-document.addEventListener('DOMContentLoaded', () => {
-    init().catch(console.error);
-});
+document.addEventListener('DOMContentLoaded', () => init().catch(console.error));
+export {};

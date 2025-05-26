@@ -1,0 +1,12 @@
+{
+    "banners": [
+        {
+            "imgSrc": "./assets/imgs/farm/202504050530590972_086517.jpg",
+            "imgAlt": "여행 배너 이미지",
+            "titlePrimary": "꾸밈레벨별 코디 추천",
+            "titleSecondary": "10% 쿠폰 발급 중",
+            "currentPage": 1,
+            "totalPages": 5
+        }
+    ]
+}

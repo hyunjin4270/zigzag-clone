@@ -1,4 +1,4 @@
-// src/app.ts
+// src/home.ts
 
 /**
  * 홈 배너에서 사용할 요소의 타입을 정의하였습니다
@@ -20,9 +20,11 @@ interface HomeBannerData {
  * @returns 템플릿
  */
 function getTemplate(id: string): HTMLTemplateElement {
-  const template = document.getElementById(id);
-  if (!template || template.tagName !== 'TEMPLATE') throw new Error(`템플릿 #${id}을 찾을 수 없습니다.`);
-  return template as HTMLTemplateElement;
+  const template = document.getElementById(id)
+  if (!template || template.tagName !== 'TEMPLATE') {
+    throw new Error(`템플릿 #${id}을 찾을 수 없습니다.`)
+  }
+  return template as HTMLTemplateElement
 }
 
 /**
@@ -30,49 +32,43 @@ function getTemplate(id: string): HTMLTemplateElement {
  * @param data 주입하고자 하는 내용
  */
 function renderHomeBanner(data: HomeBannerData): HTMLElement {
-  const template = getTemplate('home-banner-template');
-  const fragment = document.importNode(template.content, true);
-  const element = fragment.firstElementChild as HTMLElement;
+  const template = getTemplate('home-banner-template')
+  const fragment = document.importNode(template.content, true)
+  const element = fragment.firstElementChild as HTMLElement
 
-  const imageElement = element.querySelector<HTMLImageElement>('.slide-img')!;
-  imageElement.src = data.imgSrc;
-  imageElement.alt = data.imgAlt ?? '';
+  const imageElement = element.querySelector<HTMLImageElement>('.slide-img')!
+  imageElement.src = data.imgSrc
+  imageElement.alt = data.imgAlt ?? ''
 
-  const pageElements = Array.from(element.querySelectorAll<HTMLElement>('.page-text')!);
-  pageElements[0].textContent = String(data.currentPage);
-  pageElements[1].textContent = String(data.totalPages);
+  const pageElements = Array.from(element.querySelectorAll<HTMLElement>('.page-text')!)
+  pageElements[0].textContent = String(data.currentPage)
+  pageElements[1].textContent = String(data.totalPages)
 
   const titleElements = Array.from(element.querySelectorAll<HTMLElement>('.slide-title'))
-  titleElements[0].textContent = data.titlePrimary ?? '';
-  titleElements[1].textContent = data.titleSecondary ?? '';
+  titleElements[0].textContent = data.titlePrimary ?? ''
+  titleElements[1].textContent = data.titleSecondary ?? ''
 
+  const subElement = element.querySelector<HTMLElement>('.slide-text')
+  if (subElement) subElement.textContent = data.text ?? ''
 
-
-  const subElement = element.querySelector<HTMLElement>('.slide-text');
-  if (subElement) subElement.textContent = data.text ?? '';
-
-
-  return element;
+  return element
 }
 
 /**
  * 정보기입(변경 예정)
  */
 async function init(): Promise<void> {
-  const sampleData: HomeBannerData = {
-    imgSrc: './assets/imgs/farm/202504050530590972_086517.jpg',
-    imgAlt: '배너 이미지',
-    titlePrimary: '꾸밈레벨별 코디 추천',
-    titleSecondary: '10% 쿠폰 발급 중',
-    text: '편한 원마일웨어부터 하객룩까지',
-    currentPage: 30,
-    totalPages: 42,
-  }
-
   const container = document.getElementById('home-banner-container')
   if (!container) throw new Error('#home-banner-container 가 없습니다.')
 
-  container.appendChild(renderHomeBanner(sampleData))
+  const jsonUrl = new URL('./data/homeBanners.json', import.meta.url).href
+  const res = await fetch(jsonUrl)
+  if (!res.ok) throw new Error('homeBanners.json 로드 실패')
+  const bannersData: { banners: HomeBannerData[] } = await res.json()
+
+  bannersData.banners.forEach(banner => {
+    container.appendChild(renderHomeBanner(banner))
+  })
 }
 
-document.addEventListener('DOMContentLoaded', () => init().catch(console.error));
+document.addEventListener('DOMContentLoaded', () => init().catch(console.error))
