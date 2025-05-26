@@ -1,50 +1,64 @@
 // src/app.ts
 
+/**
+ * 홈 배너에서 사용할 요소의 타입을 정의하였습니다
+ */
 interface HomeBannerData {
   imgSrc: string
   imgAlt?: string
-  titlePrimary: string
-  titleSecondary: string
-  text: string
+  titlePrimary?: string
+  titleSecondary?: string
+  text?: string
   currentPage: number
   totalPages: number
 }
 
+/**
+ * id를 이용해 HTML 요소(템플릿)을 얻습니다.
+ * 만약 없으면 예외를 발생시킵니다.
+ * @param id 얻고자 하는 템플릿의 아이디
+ * @returns 템플릿
+ */
 function getTemplate(id: string): HTMLTemplateElement {
-  const tpl = document.getElementById(id)
-  if (!tpl || tpl.tagName !== 'TEMPLATE') {
-    throw new Error(`템플릿 #${id}을 찾을 수 없습니다.`)
-  }
-  return tpl as HTMLTemplateElement
+  const template = document.getElementById(id);
+  if (!template || template.tagName !== 'TEMPLATE') throw new Error(`템플릿 #${id}을 찾을 수 없습니다.`);
+  return template as HTMLTemplateElement;
 }
 
+/**
+ * 홈 배너 템플릿에 원하는 내용을 주입하는 메서드입니다.
+ * @param data 주입하고자 하는 내용
+ */
 function renderHomeBanner(data: HomeBannerData): HTMLElement {
-  const tpl = getTemplate('home-banner-template')
-  const fragment = document.importNode(tpl.content, true)
-  const el = fragment.firstElementChild as HTMLElement
+  const template = getTemplate('home-banner-template');
+  const fragment = document.importNode(template.content, true);
+  const element = fragment.firstElementChild as HTMLElement;
 
-  const imgEl = el.querySelector<HTMLImageElement>('.slide-img')!
-  imgEl.src = data.imgSrc
-  imgEl.alt = data.imgAlt ?? ''
+  const imageElement = element.querySelector<HTMLImageElement>('.slide-img')!;
+  imageElement.src = data.imgSrc;
+  imageElement.alt = data.imgAlt ?? '';
 
-  const pageEls = Array.from(el.querySelectorAll<HTMLElement>('.page-text'))
-  if (pageEls.length >= 2) {
-    pageEls[0].textContent = String(data.currentPage)
-    pageEls[1].textContent = String(data.totalPages)
-  }
+  const pageElements = Array.from(element.querySelectorAll<HTMLElement>('.page-text')!);
+  pageElements[0].textContent = String(data.currentPage);
+  pageElements[1].textContent = String(data.totalPages);
 
-  const titleEls = Array.from(el.querySelectorAll<HTMLElement>('.slide-title'))
-  if (titleEls.length >= 2) {
-    titleEls[0].textContent = data.titlePrimary
-    titleEls[1].textContent = data.titleSecondary
-  }
+  const titleElements = Array.from(element.querySelectorAll<HTMLElement>('.slide-title'))
+  titleElements[0].textContent = data.titlePrimary ?? '';
+  titleElements[1].textContent = data.titleSecondary ?? '';
 
-  el.querySelector<HTMLElement>('.slide-text')!.textContent = data.text
 
-  return el
+
+  const subElement = element.querySelector<HTMLElement>('.slide-text');
+  if (subElement) subElement.textContent = data.text ?? '';
+
+
+  return element;
 }
 
-async function init() {
+/**
+ * 정보기입(변경 예정)
+ */
+async function init(): Promise<void> {
   const sampleData: HomeBannerData = {
     imgSrc: './assets/imgs/farm/202504050530590972_086517.jpg',
     imgAlt: '배너 이미지',
@@ -61,6 +75,4 @@ async function init() {
   container.appendChild(renderHomeBanner(sampleData))
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  init().catch(console.error)
-})
+document.addEventListener('DOMContentLoaded', () => init().catch(console.error));
