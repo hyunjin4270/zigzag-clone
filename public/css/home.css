@@ -145,6 +145,26 @@ main {
   align-items: center;
 }
 
+.home-banner {
+  width: 600px;
+  height: 600px;
+}
+
+.slide-counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 40px;
+    height: 6px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    padding: 8px 12px;
+    bottom: 30px;
+    right: 16px;
+    border-radius: 20px;
+    z-index: 1;
+}
+
 .carousel {
   width: 600px;
   overflow: hidden;
@@ -161,6 +181,8 @@ main {
   display: flex;
   justify-content: center;
 }
+
+
 
 footer {
   position: fixed;
