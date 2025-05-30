@@ -1,0 +1,510 @@
+body, html{
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-ExtraLight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+.head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  height: 52px;
+  margin: auto;
+  position: fixed;
+  background-color: white;
+  z-index: 205;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo1{
+  display: flex;
+  margin-left: 16px;
+  margin-right: 10px;
+  width: 91px;
+  height: 22px;
+}
+
+.logo,.home {
+  display: flex;
+  width: 91px;
+  height: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+.icon{
+  border: none;
+  padding: 6px;
+  width: 44px;
+  height: 44px;
+}
+
+.icon img{
+  width: 32px;
+  height: 32px;
+}
+
+.headicon{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  position: absolute;
+  right: 6px;
+}
+
+.product{
+  width: 600px;
+  height: 720px;
+  display: block;
+}
+
+.middle{
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 52px;
+  max-width: 600px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.watching{
+  position: relative;
+  width: 576px;
+  height: 20px;
+  padding: 5px 12px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: first baseline;
+}
+
+.watching img{
+  margin-right: 4px;
+  width: 20px;
+  height: 20px;
+}
+
+.txt{
+  color: white;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  font-family: 'Pretendard JP';
+  letter-spacing: 0.25px;
+}
+
+.share button{
+  position: relative;
+  top: 1px;
+  display: block;
+  box-sizing: border-box;
+  width: 48px;
+  height: 42px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.share img{
+  height: 15px;
+  width: 15px;
+  fill: none;
+}
+
+.asd{
+  display: flex;
+  justify-content: space-between;
+  width: 596px;
+  height: 42px;
+  margin: 0 0 14px 0;
+  padding: 0 4px 0 0;
+}
+
+.hera{
+  display: flex;
+  padding-left: 16px;
+  text-align: center;
+  height: 42px;
+  align-items: center;
+}
+
+.share{
+  position: relative;
+  top: 1px;
+  display: block;
+  width: 48px;
+  height: 42px;
+  margin: 0;
+}
+
+.asd button{
+  border: none;
+  color: gray;
+}
+
+.pi img{
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+.tt{
+  padding: 0 16px;
+  position: relative;
+}
+
+.ttt{
+  font-weight: 300;
+  font-family: 'Pretendard JP';
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+  line-height: 150%;
+  width: 568px;
+}
+
+.revi{
+  margin: 0 0 16px;
+  padding: 0 16px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 18px;
+  width: 568px;
+}
+
+.re{
+  margin: 0px 0px 0px 1px;
+  font-size: 12px;
+  font-weight: 500;
+  color: gray;
+  font-family: 'Pretendard JP';
+
+}
+.rev{
+  margin: 0px 0px 0px 6px;
+  padding: 11px 0px;
+  color: gray;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 400;
+  font-family: 'Pretendard JP';
+  font-size: 12px;
+  line-height: 14px;
+
+
+}
+
+.revi img{
+  width: 19px;
+  height: 19px;
+}
+
+.mb{
+  margin: 23px 0 16px 0;
+  padding: 0 16px;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  max-width: 600px;
+  width: 568px;
+  height: 67px;
+}
+
+.money{
+  max-height: 67px;
+}
+.md1{
+  position: relative;
+  top: 1px;
+  display: flex;
+}
+.md2{
+  position: relative;
+  left: 1px;
+  margin: 0 3px 0 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #4F5558;
+  font-family: 'Pretendard JP';
+}
+.md3{
+  font-size: 14px;
+  font-weight: 400;
+  color: #828A8F;
+  text-decoration: line-through;
+  font-family: 'Pretendard JP';
+}
+
+.m{
+  display: flex;
+  align-items: center;
+}
+.m2{
+  font-weight: 700;
+  max-height: 26px;
+  font-size: 22px;
+  color: #34383B;
+  align-items: center;
+  display: flex;
+  font-family: 'Pretendard JP';
+}
+.m3{
+  position: relative;
+  top: 1px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.m4{
+  margin: 1px 0 0 1px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #34383B;
+  font-family: 'Pretendard JP';
+}
+
+.zp{
+  position: relative;
+  top: -2px;
+  display: flex;
+  align-items: center;
+  -webkit-box-align: center;
+}
+.zp1{
+  font-weight: 700;
+  max-height: 26px;
+  font-size: 22px;
+  color: #FA6EE3;
+  display: flex;
+  align-items: center;
+  font-family: 'Pretendard JP';
+}
+.zp2{
+  position: relative;
+  top: 1px;
+  display: flex;
+  align-items: center;
+}
+.zp3{
+  margin: 1px 0 0 1px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #FA6EE3;
+  font-family: 'Pretendard JP';
+}
+.zp4{
+  margin: 1px 0 0 5px;
+  line-height: 17px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FA6EE3;
+  font-family: 'Pretendard JP';
+}
+.zp5{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 60%;
+  left: 120%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zp img{
+  width: 17px;
+  height: 17px;
+  display: block;
+}
+
+.coupon{
+  position: relative;
+  font-weight: 600;
+  width: 106px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 22px;
+  border: 1px solid #fa6ee3;
+  color: #fa6ee3;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 13px;
+  left: 340px;
+  bottom: 30px;
+  font-family: 'Pretendard JP';
+}
+
+.coupon span{
+  position: relative;
+}
+
+
+.info{
+
+}
+.info span{
+  color: #FA6EE3;
+  font-family: 'Pretendard JP';
+  font-weight: 600;
+}
+
+.info1{
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 8px;
+  padding: 0 12px 0 16px;
+  display: flex;
+  align-items: center;
+  height: 44px;
+  width: 572px;
+  border-radius: 6px;
+  background-color: black;
+  max-width: 600px;
+  font-family: 'Pretendard JP';
+  justify-content: space-between;
+
+}
+.info2{
+  display: flex;
+  align-items: center;
+}
+.info3{
+  font-family: 'Pretendard JP';
+  font-size: 13px;
+  font-weight: 600;
+  color: #FA6EE3;
+  display: flex;
+}
+.info4{
+  color: #FA6EE3;
+  margin: auto;
+  font-family: 'Pretendard JP';
+  font-size: 13px;
+}
+
+.mile{
+  border: 1px solid black;
+  overflow: hidden;
+  border-radius: 6px;
+  margin: 0 auto;
+  max-width: 600px;
+  font-weight: 600;
+  font-family: 'Pretendard JP';
+}
+.mile2{
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+.mile3{
+  padding: 0 11px 0 0;
+  display: flex;
+  align-items: center;
+  color: #606567;
+  font-size: 15px;
+  line-height: 18px;
+}
+.mile p{
+  color: #121212;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+
+.foot{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 600px;
+  height: 60px;
+  background-color: white;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  box-sizing: border-box;
+  z-index: 1000;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+}
+
+.foot button{
+  border: none;
+}
