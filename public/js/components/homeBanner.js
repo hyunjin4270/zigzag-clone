@@ -10,9 +10,6 @@ export function renderHomeBanner(data) {
     const image = element.querySelector('.slide-img');
     image.src = data.imgSrc;
     image.alt = data.imgAlt ?? '';
-    const pages = Array.from(element.querySelectorAll('.page-text'));
-    pages[0].textContent = String(data.currentPage);
-    pages[1].textContent = String(data.totalPages);
     const titles = Array.from(element.querySelectorAll('.slide-title'));
     titles[0].textContent = data.titlePrimary ?? '';
     titles[1].textContent = data.titleSecondary ?? '';

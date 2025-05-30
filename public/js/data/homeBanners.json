@@ -1,14 +1,52 @@
 {
-    "banners": [
-        {
-            "imgSrc": "./assets/imgs/farm/202504050530590972_086517.jpg",
-            "imgAlt": "여행 배너 이미지",
-            "titlePrimary": "꾸밈레벨별 코디 추천",
-            "titleSecondary": "10% 쿠폰 발급 중",
-            "text": "나중에 만나요"
-        },
-        {
-            
-        }
-    ]
+  "banners": [
+    {
+      "imgSrc": "./assets/imgs/farm/202504050530590972_086517.jpg",
+      "imgAlt": "여행 배너 이미지",
+      "titlePrimary": "꾸밈레벨별 코디 추천",
+      "titleSecondary": "10% 쿠폰 발급 중"
+    },
+    {
+      "imgSrc": "./assets/imgs/farm/202504061209067311_068294.jpg",
+      "imgAlt": "아이스크림 이미지"
+    },
+    {
+      "imgSrc": "./assets/imgs/farm/202504061129408109_076356.jpg",
+      "imgAlt": "화장품 이미지",
+      "titlePrimary":  "여름 맞이 특가",
+      "text": "전 상품 무료배송 중"
+    },
+    {
+      "imgSrc": "./assets/imgs/farm/202504061126258541_074245.jpg"
+    },
+    {
+      "imgSrc": "./assets/imgs/farm/202504041834485097_012382.jpg",
+      "titlePrimary": "리리앤코 썸머 맞이",
+      "titleSecondary": "여름 아이템 특가 ~ 70%"
+    },
+    {
+      "imgSrc": "./assets/imgs/farm/202504050530590972_086517.jpg",
+      "titlePrimary": "이번주 애플 오픈",
+      "titleSecondary": "느좋 선물 20%",
+      "text": "쇼핑몰 최대 992% 할인"
+    },
+    {
+      "imgSrc": "./assets/imgs/farm/202503300839526257_068958.jpg"
+    },
+    {
+      "imgSrc": "./assets/imgs/farm/202504040818274805_058275.jpg"
+    },
+    {
+      "imgSrc": "./assets/imgs/farm/202504020509375635_058499.jpg"
+    },
+    {
+      "imgSrc": "./assets/imgs/farm/202504010617279670_072769.jpg",
+      "titlePrimary": "ZIGZAG 최대 93% 할인",
+      "titleSecondary": "5월 할인 이벤트",
+      "text": "전 상품 무료배송 + 할인 가 개별 적용"
+    },
+    {
+      "imgSrc": "./assets/imgs/farm/202503300841547244_069574.jpg"
+    }
+  ]
 }

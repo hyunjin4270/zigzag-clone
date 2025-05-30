@@ -14,10 +14,6 @@ export function renderHomeBanner(data: HomeBannerData): HTMLElement {
   image.src = data.imgSrc;
   image.alt = data.imgAlt ?? '';
 
-  const pages = Array.from(element.querySelectorAll<HTMLElement>('.page-text'));
-  pages[0].textContent = String(data.currentPage);
-  pages[1].textContent = String(data.totalPages);
-
   const titles = Array.from(element.querySelectorAll<HTMLElement>('.slide-title'));
   titles[0].textContent = data.titlePrimary ?? '';
   titles[1].textContent = data.titleSecondary ?? '';
