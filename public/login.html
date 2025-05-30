@@ -5,13 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/login.css">
+    
 </head>
 <body>
+    <script src="./js/login.js"></script>
     <div class="layout">
         <header>
             <img src="./assets/imgs/icon/left.svg" alt="home" class="header-img">
         </header>
-                <footer>
+        <main>
+            <p class="main-message">이메일로 로그인하기</p>
+            <div class="login">
+                            <div class="login-form">
+                <label for="" class="login-text">이메일 주소</label>
+                <div class="login-design">
+                    <input type="email" placeholder="abc@email.com" autocomplete="new-password" class="login-input">
+                </div>
+            </div>
+           <div class="login-form">
+                <label for="" class="login-text">비밀번호</label>
+                <div class="login-design">
+                    <input type="password" placeholder="영문, 숫자, 특수문자 포함 8자 이상" autocomplete="new-password" class="login-input">
+                    <img src="./assets/imgs/icon/eye-off.svg" alt="eye" class="password-wrapper">
+                </div>
+            </div>
+            </div>
+            <button type="submit" class="login-button">로그인</button>
+        </main>
+        <footer>
         <div class="footer-items">
             <a href="" class="footer-item">
                 <div class="footer-element">
