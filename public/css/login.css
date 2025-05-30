@@ -146,10 +146,6 @@ main {
     height: 48px;
 }
 
-input {
-    appearance: none;
-    border: none;
-}
 input::placeholder {
     font-size: 15px;
     font-weight: 400;
@@ -163,6 +159,8 @@ input:focus {
 }
 
 .login-input {
+    appearance: none;
+    border: none;
     width: 100%;
     height: 100%;
     font-size: 15px;
@@ -200,7 +198,74 @@ button.login-button:disabled {
     transition: background 0.25s cubic-bezier(0.33,1,0.68,1),color 0.25s cubic-bezier(0.33,1,0.68,1);
 }
 
+.subtext-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    height: 52px;
+}
 
+.auto-login {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+.auto-login-checkbox {
+    position: absolute;
+    opacity: 0;
+    width: 0; height: 0;
+}
+
+.auto-login-text {
+    color: #000;
+    font-size: 13px;
+    line-height: 16px;
+    margin-left: 8px;
+    font-weight: 400;
+}
+
+.auto-login-icon .circle {
+    fill: none;
+    stroke: #D2D5D6;
+    stroke-width: 2;
+}
+.auto-login-icon .check {
+    fill: none;
+}
+
+.auto-login-checkbox:checked + .auto-login-icon .circle {
+    fill: #FA6EE3;
+    stroke: #FA6EE3;
+}
+.auto-login-checkbox:checked + .auto-login-icon .check {
+    fill: #fff;
+}
+
+.find-intermation {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cross-line{
+    height: 13px;
+    width: 1px;
+    margin: 0px 14px;
+    background-color: #D2D5D6;
+}
+
+.find-text {
+    padding: 0px 4px;
+    color: #C1C0C1;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.15;   
+}
 
 footer {
   position: fixed;
