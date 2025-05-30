@@ -391,6 +391,7 @@ footer {
   border-bottom: none;
   overflow: hidden;
   background-color: white;
+  z-index: 3;
 }
 
 .footer-items {
