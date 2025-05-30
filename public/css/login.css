@@ -267,6 +267,34 @@ button.login-button:disabled {
     line-height: 1.15;   
 }
 
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.register-message {    
+    padding-left: 6px;
+    font-weight: 500;
+    color: #828a8f;
+    font-size: 13px;
+}
+
+.register-button {
+    font-family: 'Pretendard JP';
+    padding: 0px 4px;
+    appearance: none;
+    border: none;
+    background: none;
+    height: 20px;
+    font-size: 13px;
+    line-height: 16px;
+    cursor: pointer;
+    color: #121212;
+    font-weight: 400;
+}
+
 footer {
   position: fixed;
   bottom: 0;
