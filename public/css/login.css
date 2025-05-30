@@ -103,8 +103,28 @@ header {
 main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 20px 16px;
     row-gap: 10px;
+}
+
+.non-password {
+  width: 600px; 
+  align-self: center;
+  padding: 6px;
+  background-color: rgb(143, 130, 255);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.non-text {
+    margin: 0px;
+    height: 18px;
+    line-height: 16px;
+    font-size: 13px;
+    color: #fff;
 }
 
 .main-message {
@@ -169,6 +189,15 @@ input:focus {
     color: black;
     background-color: inherit;
     font-family: 'Pretendard JP';
+}
+
+.error-message {
+  color: #ff4d4d;
+  padding: 2px;
+  line-height: 16px;
+  font-family: 'Pretendard JP';
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .password-wrapper {
