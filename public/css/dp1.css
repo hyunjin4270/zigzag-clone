@@ -409,7 +409,7 @@ body, html{
 }
 
 
-.info span{
+.infos{
   color: #FA6EE3;
   font-family: 'Pretendard JP';
   font-weight: 600;
@@ -425,7 +425,7 @@ body, html{
   display: flex;
   align-items: center;
   height: 44px;
-  width: 572px;
+  width: 562px;
   border-radius: 6px;
   background-color: black;
   max-width: 600px;
@@ -452,19 +452,21 @@ body, html{
 }
 
 .mile{
-  border: 1px solid black;
+  border: 1px solid #d2d5d6;
   overflow: hidden;
   border-radius: 6px;
   margin: 0 auto;
   max-width: 600px;
   font-weight: 600;
   font-family: 'Pretendard JP';
+  height: 154;
+  width: 590px;
 }
 .mile2{
   padding: 16px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #d2d5d6;
 }
 .mile3{
   padding: 0 11px 0 0;
@@ -481,6 +483,330 @@ body, html{
   font-size: 15px;
   line-height: 18px;
 }
+.mile4{
+  padding: 14px 0px 8px;
+}
+.mile5{
+  padding: 0px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 17px;
+}
+.mile6{
+  font-weight: 400;
+  font-family: 'Pretendard JP';
+  padding: 0px 11px 0px 0px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.mile7{
+  margin: 0px 0px 0px 6px;
+  white-space: pre;
+  color: #606567;
+  font-weight: 400;
+  font-family: 'Pretendard JP';
+  font-size: 14px;
+  line-height: 17px;
+}
+.mile8{
+  font-weight: 400;
+  font-family: 'Pretendard JP';
+  color: #121212;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0;}
+.mile9{
+  margin-bottom: 15px;
+  padding: 4px 0px 0px 37px;
+  font-weight: 300;
+  font-family: 'Pretendard JP';
+  height: 55px;
+}
+.mile10{
+  align-items: center;
+  position: relative;
+  margin: 6px 0px 0px;
+  padding: 0px 16px 0px 8px;
+  color: #828a8f;
+}
+.mile11{
+  display: flex;
+  align-items: center;
+  line-height: 17px;
+  height: 17px;
+  white-space: pre;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-size: 13px;
+}
+.mile12{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+.mile13{
+  text-decoration: underline;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+.mile12::before{
+  content: "·";
+  margin-right: 6px;
+  color: #828a8f;
+}
+.mile14{
+  color: #f5833d;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+.mile15{
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 6px 0px 0px;
+  padding: 0px 16px 0px 8px;
+  color: #878f91;
+  font-weight: 300;
+  font-family: 'Pretendard JP';
+  font-size: 13px;
+}
+.mile15::before{
+  content: "·";
+  margin-right: 6px;
+  color: #828a8f;
+}
+.mile11 img{
+  padding-left: 5px;
+}
+
+.mi1{
+  margin: 0 auto;
+  padding: 17px 16px 0 16px;
+  display: flex;
+  align-items: flex-start;
+  border-top: 1px solid #f5f6f8;
+  width: 600px;
+  max-width: 600px;
+}
+.mi2{
+  font-weight: 300;
+  font-family: 'Pretendard JP';
+  min-width: 56px;
+  margin-right: 8px;
+  color: #878f91;
+  font-size: 14px;
+  line-height: 17px;
+}
+.mi3{
+  position: relative;
+  top: -1px;
+}
+.mi4{
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  font-family: 'Pretendard JP';
+  color: #121212;
+}
+.mi5{
+  margin: 0 auto;
+  padding: 17px 0 0 0;
+  border-top: 1px solid #f5f6f8;
+  width: 600px;
+  max-width: 600px;
+  align-items: center;
+  justify-content: center;
+}
+.mi6{
+  display: flex;
+  align-items: flex-start;
+}
+.mi7{
+  font-weight: 300;
+  font-family: 'Pretendard JP';
+  min-width: 56px;
+  margin-right: 8px;
+  line-height: 18px;
+  color: #878f91;
+  font-size: 14px;
+  bottom: 14px;
+  position: relative;
+}
+.mi8{
+  font-weight: 400;
+  font-family: 'Pretendard JP';
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  text-decoration: underline;
+  color: #878f91;
+  cursor: pointer;
+  line-height: 17px;
+}
+.mi9{
+  margin: 0 auto;
+  padding: 16px 0;
+  border-top: 1px solid #f5f6f8;
+  width: 595px;
+  max-width: 600px;
+
+}
+.mi10{
+  display: flex;
+  align-items: flex-start;
+
+}
+.mi10 h2{
+  font-weight: 400;
+  font-family: 'Pretendard JP';
+  min-width: 56px;
+  margin-right: 8px;
+  color: #828a8f;
+  font-size: 14px;
+  line-height: 17px;
+}
+.mi12{
+  font-weight: 400;
+  font-family: 'Pretendard JP';
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 14px;
+  line-height: 17px;
+  top: 10px;
+}
+.mi13{
+  margin: 0 5px;
+  position: relative;
+  top: 3px;
+  width: 1px;
+  height: 12px;
+  background: #d2d5d6;
+}
+#m14{
+  color: #242729;
+  position: relative;
+  display: flex;
+  font-size: 14px;
+  line-height: 17px;
+  height: 20px;
+  font-weight: 300;
+  font-family: 'Pretendard JP';
+}
+#m14 img{
+  width: 16px;
+  height: 16px;
+  position: relative;
+  left: 2px;
+  top: 1px;
+}
+.m16{
+  font-weight: 300;
+  font-family: 'Pretendard JP';
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-wrap: wrap;
+  row-gap: 3px;
+  margin: 8px 0 0 0;
+  font-size: 14px;
+  color: #242729;
+  line-height: 17px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.slider {
+  position: relative;
+  width: 600px;
+  overflow: hidden;
+  margin: auto;
+}
+.slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slide img {
+  width: 600px;
+  height: 96px;
+  object-fit: cover;
+}
+.counter {
+  position: absolute;
+  bottom: 16px;
+  right: 14px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 1px 1px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: 'Pretendard JP';
+  height: 18px;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 2;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  min-width: 40px;
+  width: 40px;
+}
+
+
+
+.pi{
+  max-height: 1680px;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  position: relative;
+}
+.pi img{
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+.pi.expanded{
+  max-height: 100%;
+}
+.pib1{
+  border: 1px solid #242729;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 44px;
+  border-radius: 100px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  position: relative;
+  gap: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 568px;
+}
+#pib{
+  outline: none;
+  color: #242729;
+  border: none;
+  width: 560px;
+}
+.gradation{
+  position: absolute;
+  bottom: 0px;
+  height: 120px;
+  width: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgb(255, 255, 255));
+}  
 
 
 .foot{
