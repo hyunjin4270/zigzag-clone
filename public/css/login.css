@@ -1,0 +1,371 @@
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-ExtraLight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #F5F6F8;
+  width: 100%;
+  overflow-y: auto;
+  font-family: 'Pretendard JP';
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a, a:hover, a:focus {
+  color: #000;
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.layout {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  min-height: 100vh;
+  position: relative;
+  margin: 0 auto;
+}
+
+header {
+    display: flex;
+    padding: 0 12px;
+    height: 44px;
+    align-items: center;
+}
+
+.header-img {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 16px;
+    row-gap: 10px;
+}
+
+.non-password {
+  width: 600px; 
+  align-self: center;
+  padding: 6px;
+  background-color: rgb(143, 130, 255);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.non-text {
+    margin: 0px;
+    height: 18px;
+    line-height: 16px;
+    font-size: 13px;
+    color: #fff;
+}
+
+.main-message {
+    margin: 0px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.login {
+    margin-top: 14px;
+}
+
+.login-form {
+    margin: 8px 0px;
+}
+
+.login-text {
+    margin-left: 8px;
+    margin-bottom: 4px;
+    font-weight: 600;
+    display: inline-block;
+    color: rgb(130, 138, 143);
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.login-design {
+    width: 100%;
+    background-color: #fff;
+    border: 2px solid rgb(232, 233, 235);
+    color: rgb(18, 19, 20);
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 0px 16px;
+    height: 48px;
+}
+
+input::placeholder {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #C1C0C1;
+    font-family: 'Pretendard JP';
+}
+input:focus {
+    outline: none;
+    caret-color: rgb(250, 110, 227);
+}
+
+.login-input {
+    appearance: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    color: black;
+    background-color: inherit;
+    font-family: 'Pretendard JP';
+}
+
+.error-message {
+  color: #ff4d4d;
+  padding: 2px;
+  line-height: 16px;
+  font-family: 'Pretendard JP';
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.password-wrapper {
+    cursor: pointer;
+}
+
+button.login-button:disabled {
+    background-color: #D2D5D6;
+}
+
+.login-button {
+    font-weight: 600;
+    border-radius: 24px;
+    white-space: pre;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 24px;
+    height: 48px;
+    min-width: 74px;
+    background-color: #000;
+    color: #FAFAFB;
+    font-size: 15px;
+    line-height: 18px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.25s cubic-bezier(0.33,1,0.68,1),color 0.25s cubic-bezier(0.33,1,0.68,1);
+}
+
+.subtext-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    height: 52px;
+}
+
+.auto-login {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+.auto-login-checkbox {
+    position: absolute;
+    opacity: 0;
+    width: 0; height: 0;
+}
+
+.auto-login-text {
+    color: #000;
+    font-size: 13px;
+    line-height: 16px;
+    margin-left: 8px;
+    font-weight: 400;
+}
+
+.auto-login-icon .circle {
+    fill: none;
+    stroke: #D2D5D6;
+    stroke-width: 2;
+}
+.auto-login-icon .check {
+    fill: none;
+}
+
+.auto-login-checkbox:checked + .auto-login-icon .circle {
+    fill: #FA6EE3;
+    stroke: #FA6EE3;
+}
+.auto-login-checkbox:checked + .auto-login-icon .check {
+    fill: #fff;
+}
+
+.find-intermation {
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cross-line{
+    height: 13px;
+    width: 1px;
+    margin: 0px 14px;
+    background-color: #D2D5D6;
+}
+
+.find-text {
+    padding: 0px 4px;
+    color: #C1C0C1;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.15;   
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.register-message {    
+    padding-left: 6px;
+    font-weight: 500;
+    color: #828a8f;
+    font-size: 13px;
+}
+
+.register-button {
+    font-family: 'Pretendard JP';
+    padding: 0px 4px;
+    appearance: none;
+    border: none;
+    background: none;
+    height: 20px;
+    font-size: 13px;
+    line-height: 16px;
+    cursor: pointer;
+    color: #121212;
+    font-weight: 400;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 60px;
+  border-radius: 20px 20px 0 0;
+  border: 1px solid #DCDEE0;
+  border-bottom: none;
+  overflow: hidden;
+  background-color: white;
+  z-index: 3;
+}
+
+.footer-items {
+  display: flex;
+  height: 100%;
+}
+
+.footer-item {
+  flex: 1 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-item:hover {
+  background-color: #F5F6F8;
+}
+
+.footer-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-text {
+  font-family: 'Pretendard-Regular', sans-serif;
+  font-size: 8pt;
+  margin: 0;
+  line-height: 1;
+}

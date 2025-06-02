@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="16" height="16"
+     viewBox="0 0 16 16"
+     fill="none">
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M0 8C0 12.4183 3.58172 16 8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8ZM12.4761 6.03039L11.4155 4.96973L6.78204 9.60315L4.03033 6.85144L2.96967 7.9121L6.78204 11.7245L12.4761 6.03039Z"
+    fill="currentColor"/>
+</svg>
