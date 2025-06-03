@@ -763,7 +763,260 @@ body, html{
   width: 40px;
 }
 
+.left{
+  display: flex;
+  position: absolute;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  z-index: 100;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-32px);
+  padding: 6px;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 9999px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,.1);
+  top: 1800px;
+  margin-left: 5px;
+}
+.right{
+  display: flex;
+  position: absolute;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  z-index: 100;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-32px);
+  padding: 6px;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 9999px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,.1);
+  top: 1800px;
+  margin-right: 5px;
+  left: 945px;
+}
+.recommended-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 600px;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
+.recommended-text {
+  font-weight: 600;
+  font-size: 18px;
+  height: 22px;
+  padding: 0px 16p;
+}
+
+.recommended-items {
+  display: flex;
+  width: 600px;
+  list-style: none;
+  gap: 2px;
+}
+
+main p,
+main ul {
+  margin: 0;
+  padding: 0;
+}
+
+main button {
+  all: unset;
+}
+
+main .card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 172px;
+  height: 336px;
+  cursor: pointer;
+}
+
+main .media-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 206px;
+  justify-content: space-between;
+  align-items: end;
+  overflow: hidden;
+}
+
+main .img-item {
+  width: 172px;
+  height: 206px;
+  max-height: 206px;
+  position: absolute;
+  z-index: 0;
+  transition: transform 0.1s ease-in-out;
+  transform-origin: center center;
+}
+
+main .card:hover .img-item {
+  transform: scale(1.1);
+}
+
+main .state-item {
+  width: 49px;
+  height: 25px;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+main .btn-heart {
+  z-index: 1;
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+}
+
+main .heart-item {
+  width: 32px;
+  height: 32px;
+}
+
+main .item-info {
+  height: 110px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+main .company {
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 4px;
+}
+
+main .item-company {
+  font-weight: 500;
+  font-size: 13px;
+  padding-right: 2px;
+}
+
+main .img-company {
+  width: 12px;
+  height: 12px;
+}
+
+main .product-name {
+  font-size: 13px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+main .product-price {
+  display: flex;
+  flex-direction: row;
+  padding-top: 4px;
+}
+
+main .discount-rate {
+  color: #F55DD7;
+  font-weight: 700;
+  margin-right: 2px;
+}
+
+main .discount-price {
+  font-weight: 700;
+}
+
+main .product-tags {
+  display: flex;
+  margin-top: 8px;
+  height: 22px;
+}
+
+main .product-tag {
+  margin-top: -2px;
+  margin-left: -2px;
+}
+
+main .img-tag {
+  width: 45px;
+  height: 20px;
+}
+
+main .item-rate {
+  display: flex;
+  align-items: end;
+  padding-top: 8px;
+}
+
+main .img-rate {
+  width: 12px;
+  height: 12px;
+}
+
+main .rate-msg {
+  font-size: 10px;
+  color: #889CBB;
+}
+.tog{
+  margin: 0 auto;
+  display: flex;
+  width: 568px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  padding: 30px 0px 16px;
+  justify-content: space-between;
+  font-family: 'Pretendard JP';
+  font-size: 18px;
+  line-height: 22px;
+  height: 22px;
+}
+
+.tab{
+  position: sticky;
+  display: flex;
+  z-index: 200;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #f5f6f8;
+  padding: 0 16px;
+  background: #fff;
+  width: 600px;
+  margin: 0 auto;
+}
+.tab button{
+  font-weight: 500;
+  font-family: 'Pretendard JP';
+  font-size: 14px;
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 48px;
+  padding: 17px 0 12px;
+  cursor: pointer;
+  border: none;
+}
+.tab1::before{
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #242729;
+}
 
 .pi{
   max-height: 1680px;
@@ -808,26 +1061,86 @@ body, html{
   background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgb(255, 255, 255));
 }  
 
+.tm{
+  padding: 24px 16px 125px 16px;
+  margin: 0 auto;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f6f8;
+  color: #a1a9ad;
+  font-weight: 300;
+  font-family: 'Pretendard JP';
+  font-size: 11px;
+  line-height: 17px;
+}
+.tm p{
+  font-weight: 400;
+}
 
 .foot{
   position: fixed;
   bottom: 0;
   width: 100%;
   max-width: 600px;
-  height: 60px;
+  height: 63px;
   background-color: white;
   border-top: 1px solid #ddd;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 16px;
+  padding: 0 20px;
   box-sizing: border-box;
   z-index: 1000;
   left: 50%;
   transform: translateX(-50%);
   border: none;
 }
+.buy{
+  font-weight: 600;
+  font-family: 'Pretendart JP';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 46px;
+  border-radius: 24px;
+  background: #121314 !important;
+  cursor: pointer;
+  color: #fafafb !important;
+  font-size: 17px;
+  line-height: 20px;
+}
+.review{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 12px;
+  cursor: pointer;
+}
+.review span{
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  font-weight: 500;
+  font-family: 'Pretendard JP';
+  font-size: 13px;
+  line-height: 16px;
+  width: 56px;
+}
+#flqb{
+  font-weight: 300;
+  color: #a1a9ad;
+  width: 56px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+  font-family: 'Pretendard JP';
+}
 
 .foot button{
   border: none;
 }
+
