@@ -163,7 +163,7 @@
 
 #sale .use {
     display:block;
-    margin-left : 80%;
+    margin-left : 410px;
     font-size:15px;
     margin-top:-4%;
 }
@@ -306,30 +306,40 @@
 
 #pay .kakaopay {
     display:flex;
-    height:32px;
-    width:68px;
+    height:20px;
+    width:40px;
+    margin-top:20px;
+    margin-left:55px;
 }
 
 #pay .toss {
     display:flex;
-    height:32px;
-    width:68px;
+    height:30px;
+    width:22px;
+    margin-top:25px;
+    margin-left:60px;
 }
 
-#pay .type_toss {
+#pay .type-toss {
     display:flex;
-    font-size:10px;
+    font-size:18px;
+    margin-top:-15px;
+    margin-left:90px;
 }
 
-#pay circle {
-    border-radius: 20px;
-    border: 1px solid #000000;
-    width: 15%;
-    height: 8px;
-    padding: 20px;
-    border-radius: 20px;
-    box-sizing: border-box;
+#pay .text-kakao{
     display:flex;
-    margin-left:30px;
-    margin-top:20px;
+    font-size:18px;
+    margin-top:25px;
+    margin-left:110px;
 }
+
+#pay .line {
+    display :block;
+    background-color: #f5f5f5;
+    width:550px;
+    height: 1px;
+    margin-bottom :150px;
+    margin-left:20px; 
+}
+
