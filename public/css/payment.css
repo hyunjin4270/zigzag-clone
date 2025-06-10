@@ -14,34 +14,34 @@
 }
 
 #header .title{
-    display:block;
+    display:flex;
     font-size: 20px;
     margin-top:-18px;
-
+    margin-left:270px;
 }
 
 #header .back {
-    display:block;
+    display:flex;
     margin-bottom:-5%;
     font-size:30px;
     width:32px;
     height:32px;
-    margin-right:50px;
+    margin-right:120px;
 }
 
 #address .orders {
-    display:block;
+    display:flex;
     font-size: 20px;
     margin-top: 30px;
-    margin-right: 85%;
+    margin-left: 20px;
     font-weight: bold; 
 }
 
 #address .change {
-    display:block;
+    display:flex;
     font-size: 15px;
-    margin-top : -30px;
-    margin-left : 80%;
+    margin-top : -20px;
+    margin-left : 490px;
 }
 
 #order .order-box {
@@ -49,7 +49,7 @@
     border-radius: 12px;
     padding : 16px;
     background-color: white;
-    display: block;
+    display: flex;
     margin:3% auto;
     flex-direction: column;
     margin-top : 3%;
@@ -58,15 +58,15 @@
 }
 
 #order .title {
-    display: block;
+    display: flex;
     font-size:18px;
-    margin-right:94%;
+    margin-right:4px;
     padding-top:5px;
     font-weight: bold; 
 }
 
 #order .img-basic {
-    display:block;
+    display:flex;
     margin-left:6%;
     margin-top:-20px;
     height:18px;
@@ -74,14 +74,14 @@
 }   
 
 #order .tag{
-    display:block;
+    display:flex;
     font-size:17px;
-    margin-left:-350px;
+    margin-left:0px;
     margin-top:2%;
 }
 
 #order .address {
-    display:block;
+    display:flex;
     font-size:17px;
     margin-right :340px;
     margin-top:5px;
@@ -112,7 +112,7 @@
 }
 
 .index {
-    display :block;
+    display :flex;
     background-color: #f5f5f5;
     width:700px;
     height: 8px;
@@ -120,8 +120,8 @@
 }
 
 #sale .text {
-    display:block;
-    margin-right:520px;
+    display:flex;
+    margin-left:20px;
     font-size: 20px;
     margin-top :30px;
     font-weight: bold; 
@@ -137,7 +137,7 @@
 }
 
 #sale .ques {
-    display:block;
+    display:flex;
     margin-left:60px;
     margin-top:-23px;
     width:20px;
@@ -154,21 +154,23 @@
     margin-top: 45px;
     margin-left: 20px;
     box-sizing: border-box;
-    display:block;
+    display:flex;
 }
 
 #sale .coupon {
-    display:block;
-    margin-right:470px;
+    display:flex;
+    margin-left:-10px;
     font-size:20px;
     margin-top:-10px;
+    white-space: nowrap;
 }
 
 #sale .use {
-    display:block;
+    display:flex;
     margin-left : 410px;
     font-size:15px;
-    margin-top:-4%;
+    margin-top:-4px;
+    white-space: nowrap;
 }
 
 #sale .second-box {
@@ -181,21 +183,23 @@
     margin-top: 30px;
     margin-left: 20px;
     box-sizing: border-box;
-    display:block;
+    display:flex;
 }
 
 #sale .mileage {
-    display:block;
+    display:flex;
     font-size:20px;
-    margin-right:430px;
-    margin-top:3%;
+    margin-left:-10px;
+    margin-top:3px;
+    white-space: nowrap;
 }
 
 #sale .point {
-    display:block;
+    display:flex;
     font-size:20px;
-    margin-right: 450px;
-    margin-top:15%;
+    margin-left: -60px;
+    margin-top:100px;
+    white-space: nowrap;
 }
 
 #sale .second-box .box-point{
@@ -227,18 +231,18 @@
 }
 
 #sale .second-box .zero{
-    display:block;
+    display:flex;
     font-size:20px;
-    margin-left:380px;
-    margin-top:-30px;
+    margin-left:400px;
+    margin-top:2px;
     position: absolute;
 }
 
 #sale .second-box .null {
     display:flex;
     font-size:20px;
-    margin-left:380px;
-    margin-top:-29px;
+    margin-left:30px;
+    margin-top:2px;
     position: absolute;
 }
 
