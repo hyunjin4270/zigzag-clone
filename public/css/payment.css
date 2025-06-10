@@ -34,6 +34,7 @@
     font-size: 20px;
     margin-top: 30px;
     margin-right: 85%;
+    font-weight: bold; 
 }
 
 #address .change {
@@ -61,6 +62,7 @@
     font-size:18px;
     margin-right:94%;
     padding-top:5px;
+    font-weight: bold; 
 }
 
 #order .img-basic {
@@ -113,7 +115,7 @@
     display :block;
     background-color: #f5f5f5;
     width:700px;
-    height: 20px;
+    height: 8px;
     margin-top :30px;
 }
 
@@ -122,6 +124,7 @@
     margin-right:520px;
     font-size: 20px;
     margin-top :30px;
+    font-weight: bold; 
 }
 
 #sale .get-coupon {
@@ -226,7 +229,7 @@
 #sale .second-box .zero{
     display:block;
     font-size:20px;
-    margin-left:26%;
+    margin-left:380px;
     margin-top:-30px;
     position: absolute;
 }
@@ -234,7 +237,7 @@
 #sale .second-box .null {
     display:flex;
     font-size:20px;
-    margin-left:26%;
+    margin-left:380px;
     margin-top:-29px;
     position: absolute;
 }
@@ -302,44 +305,152 @@
     margin-left :20px;
     margin-top:35px;
     font-size:20px;
+    font-weight: bold; 
 }
 
 #pay .kakaopay {
     display:flex;
     height:20px;
     width:40px;
-    margin-top:20px;
-    margin-left:55px;
+    margin-top:-20px;
+    margin-left:60px;
 }
 
 #pay .toss {
     display:flex;
     height:30px;
     width:22px;
-    margin-top:25px;
+    margin-top:-30px;
     margin-left:60px;
 }
 
 #pay .type-toss {
     display:flex;
     font-size:18px;
-    margin-top:-15px;
+    margin-top:-25px;
     margin-left:90px;
 }
 
 #pay .text-kakao{
     display:flex;
     font-size:18px;
-    margin-top:25px;
-    margin-left:110px;
+    margin-top:-20px;
+    margin-left:108px;
 }
 
 #pay .line {
-    display :block;
+    display :flex;
     background-color: #f5f5f5;
     width:550px;
     height: 1px;
-    margin-bottom :150px;
+    margin-top :20px;
     margin-left:20px; 
 }
 
+#pay .checkbox {
+    display : flex;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 25px;
+    position: relative;
+    margin-top:30px;
+    background-color: #ffffff;
+    border: 8px solid #e76eea; 
+}
+
+#pay .second-checkbox {
+    display : flex;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin-left: 25px;
+    position: relative;
+    margin-top:16px;
+}
+
+#pay .pay-simply {
+    display:flex;
+    font-size:18px;
+    margin-left:65px;
+    margin-top:-20px;
+}
+
+#pay .basic-pay {
+    display:flex;
+    font-size:18px;
+    margin-left:65px;
+    margin-top:-20px;
+}
+
+#price .text-pay {
+    display:flex;
+    font-size:20px;
+    margin-left :25px;
+    margin-top:35px;
+    font-weight: bold; 
+}
+
+#price .text-price {
+    display:flex;
+    font-size:20px;
+    color:#e76eea;  
+    font-weight: bold; 
+    margin-left:490px;
+    margin-top:-20px;
+}
+
+#price .object{
+    display:flex;
+    font-size:15px;
+    margin-left:25px;
+    margin-top:25px;
+}
+
+#price .text-object{
+    display:flex;
+    font-size:15px;
+    margin-left:510px;
+    margin-top:-13px;
+}
+
+#price .deliver {
+    display:flex;
+    font-size:15px;
+    margin-left:26px;
+    margin-top:15px;
+}
+
+#price .text-deliver {
+    display:flex;
+    font-size:15px;
+    margin-left: 530px;
+    margin-top:-14px;
+    color:#e76eea;
+    font-weight: bold; 
+}
+
+#benefit .text-benefit {
+    display:flex;
+    font-size:20px;
+    font-weight:bold;
+    margin-left:25px;
+    margin-top:35px;
+}
+
+#benefit .plus{
+    display:flex;
+    font-size:20px;
+    color:#e76eea;
+    font-weight:bold;
+    margin-left:460px;
+    margin-top:-20px;
+}
+
+#benefit .mileage {
+    display:flex;
+    font-size:15px;
+    margin-left:23px;
+    margin-top:28px;
+}
