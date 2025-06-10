@@ -41,7 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const password = document.getElementById("password").value;
 
         if (email === validEmail && password === validPassword) {
-            window.location.href = "payment.html";
+            document.cookie = "isLoggedIn=true; path=/";
+            window.location.href = "home.html";
         } else {
             window.location.href = "login-failed.html";
         }
