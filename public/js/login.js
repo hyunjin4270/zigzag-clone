@@ -29,3 +29,22 @@ window.addEventListener('DOMContentLoaded', () => {
     passwordInput.addEventListener('input', updateButtonState);
     updateButtonState();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const loginButton = document.querySelector(".login-button");
+
+    const validEmail = "admin";
+    const validPassword = "1234";
+
+    loginButton.addEventListener("click", function () {
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value;
+
+        if (email === validEmail && password === validPassword) {
+            window.location.href = "payment.html";
+        } else {
+            window.location.href = "login-failed.html";
+        }
+    });
+});
+
