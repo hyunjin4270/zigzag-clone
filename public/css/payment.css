@@ -119,7 +119,7 @@
     margin-top :30px;
 }
 
-#sale .text {
+#sale .text-sale {
     display:flex;
     margin-left:20px;
     font-size: 20px;
@@ -202,97 +202,107 @@
     white-space: nowrap;
 }
 
-#sale .second-box .box-point{
+#sale .box-point{
     width: 300px;
-    height: 10px;
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 15px;
     background-color: white;
-    margin-top: -130px;
-    margin-left: 100px;
     box-sizing: border-box;
-    display:flex;
-    position: relative;
+    margin-left:30px;
+    flex:none;
 }
 
-#sale .second-box .justbox {
+#sale .second-box .mileage-box {
     width: 300px;
-    height: 10px;
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 15px;
     background-color: white;
-    margin-top: 50px;
-    margin-left: 100px;
     box-sizing: border-box;
-    display:flex;
-    position: relative;
+    margin-left:-300px;
+    flex:none;
+    margin-top:90px;
 }
 
 #sale .second-box .zero{
     display:flex;
     font-size:20px;
-    margin-left:400px;
-    margin-top:2px;
+    margin-left:340px;
+    margin-top:10px;
     position: absolute;
 }
 
 #sale .second-box .null {
     display:flex;
     font-size:20px;
-    margin-left:30px;
-    margin-top:2px;
+    margin-left:340px;
+    margin-top:100px;
     position: absolute;
 }
 
 #sale .circle {
-    width: 15%;
-    height: 8px;
-    padding: 20px;
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    background-color: rgb(255, 255, 255);
+    width: 80px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 15px;
+    background-color: white;
     box-sizing: border-box;
-    display:flex;
-    margin-left:83%;
-    margin-top:-27%;
+    margin-left:30px;
+    flex:none;
+    margin-top:5px;
 }
 
 #sale .double {
-    width: 15%;
-    height: 8px;
-    padding: 20px;
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    background-color: rgb(255, 255, 255);
+    width: 80px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 15px;
+    background-color: white;
     box-sizing: border-box;
-    display:flex;
-    margin-left:83%;
-    margin-top:13%;
+    margin-left:-110px;
+    flex:none;
+    margin-top:90px;
+    
 }
 
-#sale .all {
-    display:flex;
-    font-size:15px;
-    margin-left:427px;
-    margin-top:-30px;
-    font-weight: bold;
-}
 
 #sale .every {
     display:flex;
     font-size:15px;
-    margin-left:427px;
-    margin-top:-30px;
+    margin-left:45px;
+    margin-top:100px;
     font-weight: bold;
+    white-space: nowrap;
+    
 }
+
+#sale .text-all  {
+    display:flex;
+    font-size:15px; 
+    white-space: nowrap;
+    margin-top:18px;
+    margin-left:-100px;
+}   
 
 #sale .useful {
     display:flex;
     font-size:13px;
-    margin-left:70%;
-    margin-top:-15%;
+    margin-left:-120px;
+    margin-top:50px;
+    white-space: nowrap;
     color:rgb(135, 135, 135);
 }
 
@@ -457,4 +467,44 @@
     font-size:15px;
     margin-left:23px;
     margin-top:28px;
+}
+
+#benefit .text-mileage {
+    display:flex;
+    font-size:15px;
+    margin-top:-20px;
+    margin-left:530px;
+}
+
+#benefit .review-point {
+    display:flex;
+    font-size:15px;
+    margin-top :30px;
+    margin-left:23px;
+}
+
+#benefit .man-point{
+    display:flex;
+    font-size:15px;
+    margin-top:-20px;
+    margin-left:480px;
+}
+
+#benefit .write-mileage {
+    display:flex;
+    font-size:15px;
+    margin-top:30px;
+    margin-left:22px;
+}
+
+#benefit .five {
+    display:flex;
+    font-size:15px;
+    margin-left:495px;
+    margin-top:-20px;
+}
+
+#checkbox .main-check {
+    display:flex;
+    font-size:15px;
 }
