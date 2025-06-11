@@ -1451,3 +1451,8 @@ main .rate-msg {
   z-index: 200;
   right: 8px;
 }
+
+.recommended-item a{
+  text-decoration: none;
+  color: inherit;
+}
