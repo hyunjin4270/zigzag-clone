@@ -61,6 +61,9 @@ html, body {
   overflow-y: auto;
 }
 
+* {
+    font-family: 'Pretendard JP';
+}
 
 h1, h2, h3, h4, p {
     margin:0px;
@@ -99,7 +102,33 @@ header {
 main {
     width:100%;
     height:2000px;
-    background-color:white;
+    margin-top:52px;
+    margin-bottom:82px;
+    display:flex;
+    flex-direction: column;
+}
+
+.delivery {
+    padding-left:16px;
+    padding-right:16px;
+    padding-bottom:16px;
+    display:flex;
+    flex-direction:column;
+    cursor: pointer;
+}
+
+.delivery-title {
+    font-weight:600;
+    color:000;
+    font-size:18px;
+    line-height:22px;
+}
+
+.delivery-menu {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:54px;
 }
 
 .title {
@@ -109,6 +138,62 @@ main {
     font-weight: 700;
     font-size:18px;
     line-height:22px;
+}
+
+.change-delivery-text {
+    font-weight: 600;
+    line-height:1.15;
+    font-size:13px;
+}
+
+.delivery-block {
+    padding:8px 16px;
+    display:flex;
+    flex-direction: column;
+    border:1px solid rgb(232,233,235);
+    border-radius:8px;
+}
+
+.block-title{
+    display:flex;
+    align-items:center;
+    height:42px;
+}
+
+.block-title-text{
+    line-height :19px;
+    font-size:16px;
+    font-weight: 600;
+}
+
+.basic-block{
+    margin-left:8px;
+    display:flex;
+    justify-content:center;
+    height:18px;
+    padding: 0px 4px;
+    border-radius:2px;
+    border-color:#FA6EE3;
+    border-style:solid;
+    border:1px solid #FA6EE3;
+}
+
+.basic-text {
+    color: #FA6EE3;
+    font-weight:500;
+    text-align:center;
+    font-size:11px;
+}
+
+.information-block {
+
+}
+
+.information-text {
+    font-weight:400;
+    font-size:15px;
+    color:#000;
+    line-height:14px;
 }
 
 .exit-button {
@@ -124,6 +209,10 @@ main {
     border-radius: 5px;
 }
 
+.change-delivery {
+    display:flex;
+    padding: 0 4px; 
+}
 
 footer {
     position:fixed;
