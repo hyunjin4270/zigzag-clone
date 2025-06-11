@@ -504,7 +504,23 @@
     margin-top:-20px;
 }
 
-#checkbox .main-check {
+#check-all {
     display:flex;
-    font-size:15px;
+    margin-left:20px;
+    margin-top:30px;
+}
+
+#checkbox .check-main {
+    display:flex;
+    margin-left:50px;
+    font-size:20px;
+    margin-top:-20px;
+}
+
+#checkbox .sub-agree-list li {
+    display:list-item;
+    list-style: none;
+    color:#777777;
+    margin-right:320px;
+    gap:10px;
 }
