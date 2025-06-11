@@ -42,6 +42,5 @@ next.addEventListener('click', () => {
     updateSlider();
     }
 });
-
-pdateSlider();
+updateSlider();
 });

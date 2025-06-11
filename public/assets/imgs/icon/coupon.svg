@@ -1,0 +1,19 @@
+<!-- assets/icons/coupon-alt.svg -->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 32 32"
+  width="32"
+  height="32"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  class="icon icon-coupon-alt"
+  aria-hidden="true"
+  role="img"
+>
+  <!-- 쿠폰 테두리 및 화살표 -->
+  <path d="M5.75 13.25v-5.5h20.5v5.5H26c-.744 0-1.425.364-1.905.845-.48.48-.845 1.161-.845 1.905s.364 1.425.845 1.905c.48.48 1.161.845 1.905.845h.25v5.5H5.75v-5.5H6c.744 0 1.425-.364 1.905-.845.48-.48.845-1.161.845-1.905s-.364-1.425-.845-1.905c-.48-.48-1.161-.845-1.905-.845h-.25ZM19 13l-6 6"/>
+  <!-- 쿠폰 천공 홀 -->
+  <path fill="currentColor" d="M13.5 12A1.5 1.5 0 1 0 13.5 15 1.5 1.5 0 1 0 13.5 12z"/>
+  <path fill="currentColor" d="M18.5 17A1.5 1.5 0 1 0 18.5 20 1.5 1.5 0 1 0 18.5 17z"/>
+</svg>

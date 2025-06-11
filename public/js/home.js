@@ -1,5 +1,6 @@
 import { fetchHomeBanners } from './services/bannerService.js';
 import { renderHomeBanner } from './components/homeBanner.js';
+import { getCookie } from './utils/cookie.js';
 import BannerSlider from './components/BannerSlider.js';
 async function init() {
     const container = document.getElementById('home-banner-container');
@@ -22,3 +23,19 @@ async function init() {
     new BannerSlider(container, counterEl, 5000);
 }
 document.addEventListener('DOMContentLoaded', () => init().catch(console.error));
+document.addEventListener('DOMContentLoaded', () => {
+     const myPageLink = document.getElementById('myPageLink');
+     if (!myPageLink) return;
+    myPageLink.addEventListener('click', e => {
+        e.preventDefault();
+
+        const isLoggedIn = getCookie('isLoggedIn') === 'true';
+        if (isLoggedIn) {
+            // 로그인 상태 → 마이페이지로
+            window.location.href = 'myPage.html';
+        } else {
+            // 비로그인 → 로그인 페이지로
+            window.location.href = 'login.html';
+        }
+  });
+})
