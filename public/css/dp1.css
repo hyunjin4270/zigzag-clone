@@ -1456,3 +1456,7 @@ main .rate-msg {
   text-decoration: none;
   color: inherit;
 }
+
+body button{
+  background-color: white;
+}
