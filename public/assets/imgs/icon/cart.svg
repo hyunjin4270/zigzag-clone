@@ -1,0 +1,17 @@
+<!-- assets/imgs/icon/cart.svg -->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 32 32"
+  width="32"
+  height="32"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  class="header-icon"
+  aria-hidden="true"
+>
+  <path d="M8 22H6V8h11v14h-3" />
+  <path d="M11.25 19.75a2.75 2.75 0 1 0 0 5.5 2.75 2.75 0 1 0 0-5.5z" />
+  <path d="M21.5 19.75a2.75 2.75 0 1 0 0 5.5 2.75 2.75 0 1 0 0-5.5z" />
+  <path d="M24 22h2v-6.435L22.625 12H17v10h2" />
+</svg>

@@ -1,0 +1,14 @@
+<!-- assets/icons/download.svg -->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 32 32"
+  width="32"
+  height="32"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  class="icon icon-download"
+  aria-hidden="true"
+>
+  <path d="m18.4 22.55-2.4 3.2-2.4-3.2-.225-.3H6.75V7.75h18.5v14.5h-6.625zM13 17h6m-8-4h10"/>
+</svg>

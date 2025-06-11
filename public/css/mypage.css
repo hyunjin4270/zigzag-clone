@@ -61,6 +61,11 @@ html, body {
   overflow-y: auto;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+    padding: 0px;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -152,7 +157,113 @@ header .header-item:hover {
     height: 44px;
 }
 
+main .information {
+  padding-top: 32px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
+.user-name {
+    font-weight: 700;
+    margin: 0 0 4px;
+    color: #242729;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.user-email {
+    margin: 0 0 18px;
+    color: #4F5558;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.information-button {
+    font-weight: 600;
+    border-radius: 24px;
+    white-space: pre;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 13px;
+    height: 32px;
+    min-width: 74px;
+    background-color: #000;
+    color: #FAFAFB;
+    font-size: 13px;
+    line-height: 1.15;
+    cursor: pointer;
+    border: none;
+    transition: background 0.25s cubic-bezier(0.33,1,0.68,1),color 0.25s cubic-bezier(0.33,1,0.68,1);
+}
+
+.crossline {
+    width: 100%;
+    height: 8px;
+    background-color: #F5F6F8;
+}
+
+ul,li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    height: 56px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.item-product {
+    display: flex;
+    align-items: center;
+}
+
+.item-img {
+    width: 32px;
+    height: 32px;
+}
+
+.item-name {
+    font-weight: 600;
+    margin-left: 16px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #242729;
+}
+
+.right-img {
+    color: #A1A9AD;
+    width: 16px;
+    height: 16px;
+    fill: none;
+}
+
+.rule {
+    padding: 0 24px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+}
+
+.rule-text {
+    color: #242729;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+    cursor: pointer;
+}
 
 footer {
     position: fixed;
