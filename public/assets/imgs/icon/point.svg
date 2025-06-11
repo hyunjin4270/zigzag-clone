@@ -1,0 +1,18 @@
+<!-- assets/icons/time.svg -->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 32 32"
+  width="32"
+  height="32"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.5"
+  class="icon icon-time"
+  aria-hidden="true"
+  role="img"
+>
+  <!-- 원형 시계 테두리 -->
+  <path d="M16 5.75a10.25 10.25 0 1 0 0 20.5 10.25 10.25 0 1 0 0-20.5z"/>
+  <!-- 시침/분침 -->
+  <path d="M13.75 21.75v-10h3.77c1.508 0 2.73 1.12 2.73 2.5s-1.223 2.5-2.73 2.5h-3.77"/>
+</svg>
