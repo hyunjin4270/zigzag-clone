@@ -1,13 +1,304 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./components/home-banner/home-banner.css"/>
+    <link rel="shortcut icon" href="./assets/imgs/icon/favicon.png" type="image/x-icon">
+    <title>지그재그 스토어</title>
 </head>
+
 <body>
-    <div>
-        hello html
+<div class="layout">
+    <header>
+        <a href="./home.html" class="home-logo">
+            <img src="./assets/imgs/icon/text_logo.png" alt="logo" class="img-textLogo">
+        </a>
+        <div class="header-items">
+            <a href="./home.html" class="header-item">
+                <img src="./assets/imgs/icon/search.svg" alt="search" class="img-item">
+            </a>
+            <a href="./home.html" class="header-item">
+                <img src="./assets/imgs/icon/shopping.svg" alt="shopping" class="img-item">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="home-banner">
+            <div id="home-banner-container" class="carousel"></div>
+            <div class="slide-counter">
+                <div class="page-text"></div>
+                <div class="page-border"></div>
+                <div class="page-text"></div>
+            </div>
+        </div>
+        <ul class="category-list">
+            <li class="category-item">
+                <img src="./assets/imgs/farm/202502260807089700_021690.png" alt="직진배송" class="category-img">
+                <p class="category-text">직진배송</p>
+            </li>
+            <li class="category-item">
+                <img src="./assets/imgs/farm/202409040251012103_056999.png" alt="뷰티" class="category-img">
+                <p class="category-text">뷰티</p>
+            </li>
+            <li class="category-item">
+                <img src="./assets/imgs/farm/202409040247084988_028942.png" alt="상의" class="category-img">
+                <p class="category-text">상의</p>
+            </li>
+            <li class="category-item">
+                <img src="./assets/imgs/farm/202409040248027653_082406.png" alt="원피스" class="category-img">
+                <p class="category-text">원피스</p>
+            </li>
+            <li class="category-item">
+                <img src="./assets/imgs/farm/202409040247329301_046515.png" alt="바지" class="category-img">
+                <p class="category-text">바지</p>
+            </li>
+            <li class="category-item">
+                <img src="./assets/imgs/farm/202409040247493235_041513.png" alt="스커트" class="category-img">
+                <p class="category-text">스커트</p>
+            </li>
+            <li class="category-item">
+                <img src="./assets/imgs/farm/202409040249159875_072097.png" alt="아우터" class="category-img">
+                <p class="category-text">아우터</p>
+            </li>
+            <li class="category-item">
+                <img src="./assets/imgs/farm/202409040249283210_075265.png" alt="슈즈" class="category-img">
+                <p class="category-text">슈즈</p>
+            </li>
+        </ul>
+        <div class="recommended-list">
+            <p class="recommended-text">당신을 위한 추천 아이템</p>
+            <ul class="recommended-items">
+                <li class="recommended-item">
+                    <a href="./DetailPage/dp5.html">
+                        <div class="card">
+                        <div class="media-container">
+                            <img alt="state" src="./assets/imgs/farm/202501150906355726_068028.png" class="state-item">
+                            <button class="btn-heart">
+                                <img src="./assets/imgs/icon/product_card_heart_off_icon.png" alt="heart item"
+                                     class="heart-item">
+                            </button>
+                            <img alt="item image" src="./assets/imgs/product/dearment.jpg" class="img-item">
+                        </div>
+                        <div class="item-info">
+                            <div class="company">
+                                <p class="item-company">디어먼트</p>
+                                <img src="./assets/imgs/icon/membership.png" alt="" class="img-company">
+                            </div>
+                            <p class="product-name">[단독] 🌴[8만장돌파/브이넥블라우스/하객룩/살안타템][직진배송][MNLB] 퍼퓸 레이스 라인 스트랩 코튼 블라우스</p>
+                            <div class="product-price">
+                                <span class="discount-rate">53%</span>
+                                <span class="discounted-price">29,620</span>
+                            </div>
+                            <ul class="product-tags">
+                                <il class="product-tag">
+                                    <img src="./assets/imgs/farm/202402160554241051_080366.png" alt="product tag"
+                                         class="img-tag">
+                                </il>
+                            </ul>
+                            <div class="item-rate">
+                                <img src="./assets/imgs/icon/product_card_review_light_icon.png" alt="item rate"
+                                     class="img-rate">
+                                <p class="rate-msg">4.7(10,981)</p>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </li>
+                <li class="recommended-item">
+                    <a href="./DetailPage/dp3.html">
+                        <div class="card">
+                        <div class="media-container">
+                            <img alt="state" src="./assets/imgs/farm/202501150906355726_068028.png" class="state-item">
+                            <button class="btn-heart">
+                                <img src="./assets/imgs/icon/product_card_heart_off_icon.png" alt="heart item"
+                                     class="heart-item">
+                            </button>
+                            <img alt="item image" src="./assets/imgs/product/blouse.jpg" class="img-item">
+                        </div>
+                        <div class="item-info">
+                            <div class="company">
+                                <p class="item-company">메리어라운드</p>
+                                <img src="./assets/imgs/icon/membership.png" alt="" class="img-company">
+                            </div>
+                            <p class="product-name">[단독][여름블라우스][l.m.w] 쉐이크 (bl) * 베스트 상품 재진행</p>
+                            <div class="product-price">
+                                <span class="discount-rate">45%</span>
+                                <span class="discounted-price">32,400</span>
+                            </div>
+                            <ul class="product-tags">
+                                <il class="product-tag">
+                                    <img src="./assets/imgs/farm/202402160554241051_080366.png" alt="product tag"
+                                         class="img-tag">
+                                </il>
+                            </ul>
+                            <div class="item-rate">
+                                <img src="./assets/imgs/icon/product_card_review_light_icon.png" alt="item rate"
+                                     class="img-rate">
+                                <p class="rate-msg">4.8(1655)</p>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </li>
+                <li class="recommended-item">
+                    <a href="./DetailPage/dp4.html">
+                        <div class="card">
+                        <div class="media-container">
+                            <img alt="state" src="./assets/imgs/farm/202501150906355726_068028.png" class="state-item">
+                            <button class="btn-heart">
+                                <img src="./assets/imgs/icon/product_card_heart_off_icon.png" alt="heart item"
+                                     class="heart-item">
+                            </button>
+                            <img alt="item image" src="./assets/imgs/product/pant.jpg" class="img-item">
+                        </div>
+                        <div class="item-info">
+                            <div class="company">
+                                <p class="item-company">고고싱</p>
+                                <img src="./assets/imgs/icon/membership.png" alt="" class="img-company">
+                            </div>
+                            <p class="product-name">[여름팬츠💙12만장돌파!👍허리조절/와이드팬츠] 투스트랩 와이드 팬츠
+                                (비조,버클,면바지,코튼와이드,코튼팬츠,스트랩팬츠,화이트팬츠,흰바지,면팬츠)</p>
+                            <div class="product-price">
+                                <span class="discount-rate">29%</span>
+                                <span class="discounted-price">28,400</span>
+                            </div>
+                            <ul class="product-tags">
+                                <il class="product-tag">
+                                    <img src="./assets/imgs/farm/202402160554241051_080366.png" alt="product tag"
+                                         class="img-tag">
+                                </il>
+                            </ul>
+                            <div class="item-rate">
+                                <img src="./assets/imgs/icon/product_card_review_light_icon.png" alt="item rate"
+                                     class="img-rate">
+                                <p class="rate-msg">4.7(21,928)</p>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </li>
+                <li class="recommended-item">
+                    <a href="./DetailPage/dp1.html">
+                        <div class="card">
+                        <div class="media-container">
+                            <img alt="state" src="./assets/imgs/farm/202501150906355726_068028.png" class="state-item">
+                            <button class="btn-heart">
+                                <img src="./assets/imgs/icon/product_card_heart_off_icon.png" alt="heart item"
+                                     class="heart-item">
+                            </button>
+                            <img alt="item image" src="./assets/imgs/product/14164_202504031312050057_78791.jpeg"
+                                 class="img-item">
+                        </div>
+                        <div class="item-info">
+                            <div class="company">
+                                <p class="item-company">헤라</p>
+                                <img src="./assets/imgs/icon/membership.png" alt="" class="img-company">
+                            </div>
+                            <p class="product-name">[직잭픽] 블랙 쿠션 파운데이션</p>
+                            <div class="product-price">
+                                <span class="discount-rate">25%</span>
+                                <span class="discounted-price">55,640</span>
+                            </div>
+                            <ul class="product-tags">
+                                <il class="product-tag">
+                                    <img src="./assets/imgs/farm/202402160554241051_080366.png" alt="product tag"
+                                         class="img-tag">
+                                </il>
+                            </ul>
+                            <div class="item-rate">
+                                <img src="./assets/imgs/icon/product_card_review_light_icon.png" alt="item rate"
+                                     class="img-rate">
+                                <p class="rate-msg">4.9(6,091)</p>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </li>
+                <li class="recommended-item">
+                    <a href="./DetailPage/dp2.html">
+                        <div class="card">
+                        <div class="media-container">
+                            <img alt="state" src="./assets/imgs/farm/202501150906355726_068028.png" class="state-item">
+                            <button class="btn-heart">
+                                <img src="./assets/imgs/icon/product_card_heart_off_icon.png" alt="heart item"
+                                     class="heart-item">
+                            </button>
+                            <img alt="item image" src="./assets/imgs/product/shirt.jpg" class="img-item">
+                        </div>
+                        <div class="item-info">
+                            <div class="company">
+                                <p class="item-company">메리어라운드</p>
+                                <img src="./assets/imgs/icon/membership.png" alt="" class="img-company">
+                            </div>
+                            <p class="product-name">[여름블라우스][블라우스1위][l.m.w] 로잘린 퍼프 타이 (bl)</p>
+                            <div class="product-price">
+                                <span class="discount-rate">42%</span>
+                                <span class="discounted-price">35,820</span>
+                            </div>
+                            <ul class="product-tags">
+                                <il class="product-tag">
+                                    <img src="./assets/imgs/farm/202402160554241051_080366.png" alt="product tag"
+                                         class="img-tag">
+                                </il>
+                            </ul>
+                            <div class="item-rate">
+                                <img src="./assets/imgs/icon/product_card_review_light_icon.png" alt="item rate"
+                                     class="img-rate">
+                                <p class="rate-msg">4.7(407)</p>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-items">
+            <a href="" class="footer-item">
+                <div class="footer-element">
+                    <img src="./assets/imgs/icon/logo.svg" alt="home" class="footer-img">
+                    <div class="item-text">홈</div>
+                </div>
+            </a>
+            <a href="" class="footer-item">
+                <div class="footer-element">
+                    <img src="./assets/imgs/icon/menu.svg" alt="menu" class="footer-img">
+                    <div class="item-text">카테고리</div>
+                </div>
+            </a>
+            <a href="" class="footer-item">
+                <div class="footer-element">
+                    <img src="./assets/imgs/icon/heart.svg" alt="heart" class="footer-img">
+                    <div class="item-text">찜</div>
+                </div>
+            </a>
+            <a href="#" id="myPageLink" class="footer-item">
+                <div class="footer-element">
+                    <img src="./assets/imgs/icon/intermation.svg" alt="intermation" class="footer-img">
+                    <div class="item-text" id="myPage">마이페이지</div>
+                </div>
+            </a>
+        </div>
+    </footer>
+    <script type="module" src="./js/home.js"></script>
+</div>
+
+<template id="home-banner-template">
+    <div class="home-banner">
+        <div class="info-img">
+            <img src="" alt="" class="slide-img">
+        </div>
+        <div class="info-banner">
+            <div class="slide-title"></div>
+            <div class="slide-title"></div>
+            <div class="slide-text"></div>
+        </div>
     </div>
+</template>
 </body>
+
 </html>
