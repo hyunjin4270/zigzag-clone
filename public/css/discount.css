@@ -58,6 +58,7 @@
 .coupon-block-count {
     display: flex;
     column-gap: 4px;
+    align-items: center;
 }
 
 .coupon-block-count-text {
