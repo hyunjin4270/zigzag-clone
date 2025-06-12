@@ -1,0 +1,316 @@
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-ExtraLight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard JP';
+  src: url('../assets/fonts/PretendardJP-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #F5F6F8;
+  width: 100%;
+  overflow-y: auto;
+}
+
+* {
+    font-family: 'Pretendard JP';
+}
+
+h1, h2, h3, h4, p {
+    margin:0px;
+    padding:0px;
+}
+
+body {
+    display:flex;
+    justify-content:center;
+    position:relative;
+    overflow-x:hidden;
+}
+
+.layout  {
+    width:600px;
+    height:100%;
+    background-color:#fff;
+    
+}
+
+header {
+    height:52px;
+    width:100%;
+    padding: 0 6px;
+    display:flex;
+    align-items: center;
+    z-index:3;
+    position:fixed;
+    transform:translateX(-50%);
+    max-width:588px;
+    top:0;
+    left:50%;
+    background-color: white;
+}
+
+.title {
+    position:absolute;
+    bottom:17px;
+    left:50%;
+    font-weight: 700;
+    font-size:18px;
+    line-height:22px;
+}
+
+main {
+    width:100%;
+    height:2000px;
+    margin-top:52px;
+    margin-bottom:82px;
+    display:flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+.discount {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    padding-top: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    row-gap: 8px;
+}
+
+.discount-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+}
+
+.discount-title {
+    display: flex;
+    align-items: center;
+}
+
+.discount-title-text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin-right: 3px;
+}
+
+.get-coupon {
+    display: flex;
+    align-items: center;
+}
+
+.get-coupon-text {
+    font-weight: 600;
+    color: rgb(250, 110, 227);
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.coupon-block {
+    padding:20px 16px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid rgb(232,233,235);
+    border-radius:8px;
+}
+
+.coupon-block-text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.coupon-block-count {
+    display: flex;
+    column-gap: 4px;
+}
+
+.coupon-block-count-text {
+    font-weight: 500;
+    color: #606567;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.coupon-block-count-text-count {
+    font-weight: 700;
+    color: #292b2b;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.reward-block {
+    padding:20px 16px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid rgb(232,233,235);
+    border-radius:8px;
+    row-gap: 16px;
+}
+
+.reward-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.reward-section-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 0px;
+}
+
+.reward-title {
+    font-weight: 500;
+    width: 64px;
+    font-size: 15px;
+    line-height: 18px;
+    margin-right: 8px;
+}
+
+.reward-input {
+    text-align: right;
+    font-weight: 500;
+    height: 40px;
+    padding: 0px 16px;
+    border-radius: 8px;
+    border: 1px solid rgb(232, 233, 235);
+    width: 65%;
+}
+
+.reward-button {
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    cursor: pointer;
+    height: 32px;
+    border-radius: 16px;
+    padding: 0px 10px;
+    border: 1px solid #d0d4d6;
+    color: #121212;
+    font-size: 13px;
+    line-height: 1.15;
+    font-weight: 400;
+    background-color: white;
+}
+
+.reward-section-bottom {
+    margin-top: 4px;
+    display: flex;
+    column-gap: 4px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.reward-available {
+    color: #292b2b;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.reward-separator {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #606567;
+}
+
+.reward-owned {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #606567;
+}
+
+footer {
+    position:fixed;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    background-color: white;
+    width:584px;
+    height:50px;
+    padding:16px 8px;
+    box-shadow: 0px -4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.pay-button{
+    width:100%;
+    height:100%;
+    background-color:#000;
+    color:#fff;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size:15px;
+    line-height: 18px;
+    cursor: pointer;
+}
+
+
