@@ -762,8 +762,14 @@ footer {
     line-height: 18px;
     cursor: pointer;
     border: none;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0.2;
+}
+
+button.pay-button:not(:disabled) {
+    opacity: 1;
 }
 
 button.pay-button:disabled {
-    background-color: #D2D5D6;
+    opacity: 0.2;
 }
