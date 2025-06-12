@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isLoggedIn) {
             window.location.href = '../payment.html';
         } else {
-            window.location.href = '../login.html';
+            window.location.href = '../login2.html';
         }
     });
 });

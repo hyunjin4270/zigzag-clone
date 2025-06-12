@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (email === validEmail && password === validPassword) {
             errorMessage.style.display = "none";
-            window.location.href = "home.html";
+            window.location.href = "payment.html";
         } else {
             failedAttempts++;
 
