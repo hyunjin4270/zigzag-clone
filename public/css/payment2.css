@@ -230,10 +230,28 @@ main {
 
 .order-title {
     font-weight:600;
-    color:000;
+    color:#000;
     font-size:18px;
     line-height:22px;
     margin-top:10px;
+}
+
+.order-block{
+    padding:8px 16px;
+    display:flex;
+    flex-direction: column;
+    border:1px solid rgb(232,233,235);
+    border-radius:8px;
+    color: #999;
+    
+}
+
+.order-information-title {
+    font-weight:500;
+    color:#000;
+    font-size:16px;
+    line-height:22px;
+    margin-top:5px;
 }
 
 .exit-button {
