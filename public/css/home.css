@@ -230,6 +230,7 @@ main {
 }
 
 .recommended-items {
+  margin-top: 5px;
   display: flex;
   width: 600px;
   list-style: none;

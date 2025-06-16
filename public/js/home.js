@@ -2,6 +2,9 @@ import { fetchHomeBanners } from './services/bannerService.js';
 import { renderHomeBanner } from './components/homeBanner.js';
 import { getCookie } from './utils/cookie.js';
 import BannerSlider from './components/BannerSlider.js';
+/**
+ * 홈 배너 슬라이드에 관한 함수입니다
+ */
 async function init() {
     const container = document.getElementById('home-banner-container');
     const counterEl = document.querySelector('.slide-counter');
@@ -22,7 +25,13 @@ async function init() {
     });
     new BannerSlider(container, counterEl, 5000);
 }
+
 document.addEventListener('DOMContentLoaded', () => init().catch(console.error));
+
+
+/**
+ * 마이페이지로 넘어갈 시, 로그인 상태를 체크하는 기능입니다.
+ */
 document.addEventListener('DOMContentLoaded', () => {
      const myPageLink = document.getElementById('myPageLink');
      if (!myPageLink) return;
